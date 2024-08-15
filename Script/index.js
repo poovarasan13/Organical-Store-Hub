@@ -168,6 +168,77 @@ const ProductContent=[
         prd_weight:[100,200],                                                           
     }
     ,
+    {
+        prd_id:18,
+        prd_name:"Plum",
+        prd_description:"Seasonal Plums, also known as Aloo Bukhara, are juicy, nutritious fruits that offer the perfect balance of sweetness and tartness. These vibrant, purple-skinned fruits contain vital nutrients, minerals, and anti-oxidant compounds that help maintain overall health and wellness.Plums are a versatile ingredient that can be enjoyed in various forms, from fresh to cooked. The natural Plum is a powerhouse of essential vitamins and minerals, including Vitamin A, Vitamin C, Folate, Vitamin K, Vitamin B1, Magnesium, Zinc, Calcium, and Potassium. Aalu Bukhara fruit is also an excellent source of dietary fibre and is low in calories, making it an ideal addition to a healthy diet.",
+        prd_price:85,
+        prd_image:"./Images/F&V/plum.webp",
+        prd_category:"Fruits",
+        prd_weight:[250,500],                                                           
+    }
+    ,
+    {
+        prd_id:19,
+        prd_name:"Mango",
+        prd_description:"Mango / Aam LangdaSustainably grownMangoes are naturally rich in Vitamin A, B6, C and E, calcium, iron, magnesium, potassium, protein, sugar and fibre. The antioxidant compounds in mango protect you from cellular damage and many types of cancers. With high levels of pectin and fibre, mango lowers cholesterol and blood pressure. Mango also restores the body?s alkaline-acid balance",
+        prd_price:204,
+        prd_image:"./Images/F&V/mango.webp",
+        prd_category:"Fruits",
+        prd_weight:[500,1],                                                           
+    }
+    ,
+    {
+        prd_id:20,
+        prd_name:"Onion",
+        prd_description:"Packed with Vitamins B6 and C, iron, magnesium and calcium, onions, raw and cooked, are a delicious part of many Indian dishes. Onions are anti-bacterial and antiseptic and help keep you free from infections. Mixing some honey with onion juice is a home remedy that acts as a cough syrup that relieves coughs and sore throats. If you suffer from insomnia, adding an onion to your daily diet can help cure you of your sleeplessness. It also helps control the blood sugar levels in the body. Finally, onions help in reducing the bad cholesterol in your body.",
+        prd_price:60,
+        prd_image:"./Images/F&V/onion.webp",
+        prd_category:"Vegetables",
+        prd_weight:[500,1],                                                           
+    }
+    ,
+    {
+        prd_id:21,
+        prd_name:"Tomato",
+        prd_description:"Tomatoes are a regular staple in India, with a taste that is loved the world over. But what if you get an even better taste and more nutritious tomatoes in an organic way? Yes, our organic tomato range is grown exclusively on organic farms with the standard organic farming practices to bring you the best fresh tomatoes. Add the desi tamatar to your curry, cut them up as salad or enjoy them in hot soup to no end! ",
+        prd_price:51,
+        prd_image:"./Images/F&V/tomato.webp",
+        prd_category:"Vegetables",
+        prd_weight:[500,1],                                                           
+    }
+    ,
+    {
+        prd_id:22,
+        prd_name:"Capsicum",
+        prd_description:"Rich in Vitamins A, B6 and C, iron, magnesium and calcium, capsicums come in red, green and yellow colours ? which indicates high levels of beta carotene and lycopene, which makes them amazingly heart healthy. Capsicums reduce anxiety levels, hypertension and bloating and also help cure iron deficiencies. Capsicums increase your metabolic rate, so if you are on a diet this vegetable is the way to go. Green capsicums are the least mature when picked and taste slightly bitter. Orange and yellow are a little more mature and have a slightly fruity taste. Red capsicums are the most mature and contain almost 11 times the beta carotene that green ones do.",
+        prd_price:70,
+        prd_image:"./Images/F&V/capsicum.webp",
+        prd_category:"Vegetables",
+        prd_weight:[500],                                                           
+    }
+    ,
+    {
+        prd_id:22,
+        prd_name:"Beans",
+        prd_description:"French Beans are sweet, tender and crispy. They're a good source of potassium, iron and zinc. Great to have with your stir fries, salads and soups, or as a side dish in itself.",
+        prd_price:70,
+        prd_image:"./Images/F&V/beans.webp",
+        prd_category:"Vegetables",
+        prd_weight:[500,1],                                                           
+    }
+    ,
+    {
+        prd_id:23,
+        prd_name:"Cucumber",
+        prd_description:"Dark green cucumbers have slightly smaller seeds and thinner skin than other varieties. Rich in Vitamins A and C, calcium, iron and magnesium, cucumbers also contain an enzyme called erepsin which is extremely beneficial for digestion. Cucumber seeds are also considered to be an extremely effective way to get rid of intestinal tapeworms. This cooling vegetable is known to reduce inflammation, which is why it?s so preferred as a beauty aid over swollen eyes. Cucumbers are high in antioxidants and as a result battle the free radicals that lead to early ageing and other age related issues. This watery veggie is also a great weight loss aid as it fills you up without calories.",
+        prd_price:170,
+        prd_image:"./Images/F&V/cucumber.webp",
+        prd_category:"Vegetables",
+        prd_weight:[500,1],                                                           
+    }
+    ,
+    
 ]
 
 
@@ -299,10 +370,51 @@ function displaySeed() {
         }
     });
 }
+
+function displayFV() {
+    const seedList = document.getElementById('fv-list');
+
+    seedList.innerHTML = '';
+
+    ProductContent.forEach(product => {
+        if (product.prd_category === 'Fruits' || product.prd_category === 'Vegetables' )  {
+            const colDiv = document.createElement('div');
+            colDiv.classList.add('col', 'my-2');
+
+            const cardDiv = document.createElement('div');
+            cardDiv.classList.add('card', 'card-design');
+            cardDiv.addEventListener('click', () => MoveToView(product.prd_id));
+            const imgElement = document.createElement('img');
+            imgElement.classList.add('card-img-top');
+            imgElement.src = product.prd_image; 
+            imgElement.alt = product.prd_name;
+           
+
+            const cardBodyDiv = document.createElement('div');
+            cardBodyDiv.classList.add('card-body');
+
+            const cardTitleDiv = document.createElement('div');
+            cardTitleDiv.classList.add('card-title');
+            cardTitleDiv.textContent = product.prd_name;
+
+            const cardPriceDiv = document.createElement('p');
+            cardPriceDiv.textContent = `Price: ${product.prd_price}`;
+
+            // Append elements
+            cardBodyDiv.appendChild(cardTitleDiv);
+            cardBodyDiv.appendChild(cardPriceDiv);
+            cardDiv.appendChild(imgElement);
+            cardDiv.appendChild(cardBodyDiv);
+            colDiv.appendChild(cardDiv);
+            seedList.appendChild(colDiv);
+        }
+    });
+}
 window.onload = function() {
     displayFood();
     displaySnacks();
     displaySeed();
+    displayFV();
 };
 
 function MoveToView(num){

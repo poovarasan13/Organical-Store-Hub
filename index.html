@@ -81,20 +81,21 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-md-4 ">
                         <li class="nav-item active fw-bold">
-                            <a class="nav-link text-white " onclick="ViewProduct('Foods')">Home</a>
+                          <a class="nav-link  text-white  icon-link icon-link-hover " href="./index.html" >Home</a>
+                            <!-- <a class="nav-link text-white icon-link icon-link-hover" onclick="ViewProduct('Foods')">Home</a> -->
                         </li>
                         <li class="nav-item active fw-bold">
-                            <a class="nav-link text-white" onclick="ViewProduct('Foods')">Snacks</a>
+                            <a class="nav-link text-white icon-link icon-link-hover"  href="./Caterogy.html?id=snacks" >Snacks</a>
                         </li>
                         <li class="nav-item active fw-bold">
-                            <a class="nav-link text-white" onclick="ViewProduct('Foods')">Foods</a>
+                            <a class="nav-link text-white icon-link icon-link-hover" href="./Caterogy.html?id=Foods" onclick="ViewProduct('Foods')">Foods</a>
                         </li>
                        
                         <li class="nav-item active fw-bold">
-                          <a class="nav-link text-white" onclick="ViewProduct('Foods')">Dry Fruits and Seeds</a>
+                          <a class="nav-link text-white icon-link icon-link-hover" href="./Caterogy.html?id=Seeds" onclick="ViewProduct('Seeds')">Dry Fruits and Seeds</a>
                       </li>
                       <li class="nav-item active fw-bold">
-                        <a class="nav-link text-white" onclick="ViewProduct('Foods')"> Fruits and Vegetables</a>
+                        <a class="nav-link text-white icon-link icon-link-hover"  href="./Caterogy.html?id=Fruits"> Fruits and Vegetables</a>
                     </li>
                        
                     </ul>
@@ -194,7 +195,23 @@
           
       </div>
       <div class="row mb-3 justify-content-center">
-          <div class="btn text-center col-3" onclick="ViewProduct('Seeds')"">
+          <div class="btn text-center col-3" onclick="ViewProduct('Seeds')">
+              Buy Now <span><i class="bi bi-arrow-right-square"></i></span>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section>
+  <div class="container-fluid">
+      <div class="row">
+          <div class="text-success text-center fw-bold">Fruits and Vegetables</div>
+      </div>
+      <div id="fv-list" class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+          
+      </div>
+      <div class="row mb-3 justify-content-center">
+          <div class="btn text-center col-3" onclick="ViewProduct('Fruits')">
               Buy Now <span><i class="bi bi-arrow-right-square"></i></span>
           </div>
       </div>

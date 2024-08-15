@@ -110,7 +110,7 @@ const ProductContent=[
     ,
     {
         prd_id:12,
-        prd_name:"Organic Bengal Gram Split (Chana Dal)",
+        prd_name:"Organic Bengal Gram Split",
         prd_description:"Chana Dal is one of the most commonly used legumes all across India, where it's used in multiple curries, salads, soups and spiced up dishes. Besan, one of the most commonly used flours in the country, is obtained from this chane ki daal! A protein-rich split gram dal, makes for a great addition to Vegan and Gluten-Free diets. Chana dal is also known as split bengal gram, has a low glycemic index, making it a great ingredient for diabetic patients. We source our bengal gram dal from Nagaour, Rajasthan, where it is cultivated by a group of farmers who've worked really hard over the last decade to convert their land into an organic oasis :)",
         prd_price:255,
         prd_image:"./Images/Snacks/ChanaDal_1.webp",
@@ -120,7 +120,7 @@ const ProductContent=[
     ,
     {
         prd_id:13,
-        prd_name:"Barley Flour (Jau Atta) ",
+        prd_name:"Barley Flour  ",
         prd_description:"Barley Flour, also know as Jau ka Atta or Barley Atta in India. Barley Flour is stone ground to ensure the perfect texture, taste and nutrition. We source this jau ka atta from Hamirpur, a once infertile land, now turned organic oasis! Made from the fibre-rich cereal grain barley, this jau atta is healthy and contains all the benefits that whole grains have to offer.  Incorporating jau atta into your diet can provide essential vitamins and minerals while adding a wholesome twist to your favorite recipes.  Additionally, barley flour's low glycemic index makes it suitable for individuals seeking to regulate blood sugar levels. Unlike traditionally milled flour, this barley flour has been stone ground to ensure it remains cool and its moisture and nutrient contents are preserved. This is a low-gluten flour that can be used to make a variety of breads.",
         prd_price:205,
         prd_image:"./Images/Snacks/BarleyFlour_1.webp",
@@ -130,7 +130,7 @@ const ProductContent=[
     ,
     {
         prd_id:14,
-        prd_name:"Makki ka Atta/Corn flour",
+        prd_name:"Corn flour",
         prd_description:"Sourced from the rain-fed region of Nerikala, in Himachal, where our Makki ka Atta also known as maize flour or corn flour gets the perfect weather and soil conditions for its natural growth. This premium quality maize flour is loaded with fiber and protein and makes delicious flat breads from this makki ka atta or corn flour ka atta!",
         prd_price:135,
         prd_image:"./Images/Snacks/CornFlour.webp",
@@ -140,7 +140,7 @@ const ProductContent=[
     ,
     {
         prd_id:15,
-        prd_name:"Organic Lobia - Black Eyed Peas",
+        prd_name:" Black Eyed Peas",
         prd_description:"Lobia, also known as called Black Eyed Peas are a delicious and super wholesome protein to add to your diet, plus this lobia doesn't require overnight soaking! We source this lobia or black eyed peas from Visakhapatnam, Andhra Pradesh , where they are sorted & graded by hand to bring you the best quality. Lobia is a popular plant picked for intercropping because of its various benefits to the soil it grows in!",
         prd_price:140,
         prd_image:"./Images/Snacks/KidneyBeans_1.webp",
@@ -150,7 +150,7 @@ const ProductContent=[
     ,
     {
         prd_id:16,
-        prd_name:"Organic Rajma Chitra (Kidney Beans)",
+        prd_name:"Organic Rajma Chitra",
         prd_description:"Rajma or Kidney Beans are rich in multiple vitamins and nutrients essential for a healthy lifestyle. These kidney beans are specifically known for their high antioxidant and fiber content. Chitra Kinnauri Rajma are one of the finest quality beans in the country. Rajma chitra makes for delicious curries with rice or parathas and as an addition to some healthy buddha bowls and salads!",
         prd_price:140,
         prd_image:"./Images/Snacks/KidneyBeans_1.webp",
@@ -160,7 +160,7 @@ const ProductContent=[
     ,
     {
         prd_id:17,
-        prd_name:"Organic Roasted Salted Peanuts",
+        prd_name:"Roasted Salted Peanuts",
         prd_description:"Organic roasted salted peanuts, also referred to as roasted groundnuts, are a delicious and wholesome snack choice. The evergreen snack - salted and roasted peanuts are full of energy and flavor! We roast our premium quality organic Roasted Peanuts along with a sprinkle of Himalayan Pink Salt to give you this nutritious, delicious snack, ready to be eaten straight from the pack.",
         prd_price:85,
         prd_image:"./Images/Snacks/PeanutChikki_1.webp",
@@ -168,4 +168,75 @@ const ProductContent=[
         prd_weight:[100,200],                                                           
     }
     ,
+    {
+        prd_id:18,
+        prd_name:"Plum",
+        prd_description:"Seasonal Plums, also known as Aloo Bukhara, are juicy, nutritious fruits that offer the perfect balance of sweetness and tartness. These vibrant, purple-skinned fruits contain vital nutrients, minerals, and anti-oxidant compounds that help maintain overall health and wellness.Plums are a versatile ingredient that can be enjoyed in various forms, from fresh to cooked. The natural Plum is a powerhouse of essential vitamins and minerals, including Vitamin A, Vitamin C, Folate, Vitamin K, Vitamin B1, Magnesium, Zinc, Calcium, and Potassium. Aalu Bukhara fruit is also an excellent source of dietary fibre and is low in calories, making it an ideal addition to a healthy diet.",
+        prd_price:85,
+        prd_image:"./Images/F&V/plum.webp",
+        prd_category:"Fruits",
+        prd_weight:[250,500],                                                           
+    }
+    ,
+    {
+        prd_id:19,
+        prd_name:"Mango",
+        prd_description:"Mango / Aam LangdaSustainably grownMangoes are naturally rich in Vitamin A, B6, C and E, calcium, iron, magnesium, potassium, protein, sugar and fibre. The antioxidant compounds in mango protect you from cellular damage and many types of cancers. With high levels of pectin and fibre, mango lowers cholesterol and blood pressure. Mango also restores the body?s alkaline-acid balance",
+        prd_price:204,
+        prd_image:"./Images/F&V/mango.webp",
+        prd_category:"Fruits",
+        prd_weight:[500,1],                                                           
+    }
+    ,
+    {
+        prd_id:20,
+        prd_name:"Onion",
+        prd_description:"Packed with Vitamins B6 and C, iron, magnesium and calcium, onions, raw and cooked, are a delicious part of many Indian dishes. Onions are anti-bacterial and antiseptic and help keep you free from infections. Mixing some honey with onion juice is a home remedy that acts as a cough syrup that relieves coughs and sore throats. If you suffer from insomnia, adding an onion to your daily diet can help cure you of your sleeplessness. It also helps control the blood sugar levels in the body. Finally, onions help in reducing the bad cholesterol in your body.",
+        prd_price:60,
+        prd_image:"./Images/F&V/onion.webp",
+        prd_category:"Vegetables",
+        prd_weight:[500,1],                                                           
+    }
+    ,
+    {
+        prd_id:21,
+        prd_name:"Tomato",
+        prd_description:"Tomatoes are a regular staple in India, with a taste that is loved the world over. But what if you get an even better taste and more nutritious tomatoes in an organic way? Yes, our organic tomato range is grown exclusively on organic farms with the standard organic farming practices to bring you the best fresh tomatoes. Add the desi tamatar to your curry, cut them up as salad or enjoy them in hot soup to no end! ",
+        prd_price:51,
+        prd_image:"./Images/F&V/tomato.webp",
+        prd_category:"Vegetables",
+        prd_weight:[500,1],                                                           
+    }
+    ,
+    {
+        prd_id:22,
+        prd_name:"Capsicum",
+        prd_description:"Rich in Vitamins A, B6 and C, iron, magnesium and calcium, capsicums come in red, green and yellow colours ? which indicates high levels of beta carotene and lycopene, which makes them amazingly heart healthy. Capsicums reduce anxiety levels, hypertension and bloating and also help cure iron deficiencies. Capsicums increase your metabolic rate, so if you are on a diet this vegetable is the way to go. Green capsicums are the least mature when picked and taste slightly bitter. Orange and yellow are a little more mature and have a slightly fruity taste. Red capsicums are the most mature and contain almost 11 times the beta carotene that green ones do.",
+        prd_price:70,
+        prd_image:"./Images/F&V/capsicum.webp",
+        prd_category:"Vegetables",
+        prd_weight:[500],                                                           
+    }
+    ,
+    {
+        prd_id:22,
+        prd_name:"Beans",
+        prd_description:"French Beans are sweet, tender and crispy. They're a good source of potassium, iron and zinc. Great to have with your stir fries, salads and soups, or as a side dish in itself.",
+        prd_price:70,
+        prd_image:"./Images/F&V/beans.webp",
+        prd_category:"Vegetables",
+        prd_weight:[500,1],                                                           
+    }
+    ,
+    {
+        prd_id:23,
+        prd_name:"Cucumber",
+        prd_description:"Dark green cucumbers have slightly smaller seeds and thinner skin than other varieties. Rich in Vitamins A and C, calcium, iron and magnesium, cucumbers also contain an enzyme called erepsin which is extremely beneficial for digestion. Cucumber seeds are also considered to be an extremely effective way to get rid of intestinal tapeworms. This cooling vegetable is known to reduce inflammation, which is why it?s so preferred as a beauty aid over swollen eyes. Cucumbers are high in antioxidants and as a result battle the free radicals that lead to early ageing and other age related issues. This watery veggie is also a great weight loss aid as it fills you up without calories.",
+        prd_price:170,
+        prd_image:"./Images/F&V/cucumber.webp",
+        prd_category:"Vegetables",
+        prd_weight:[500,1],                                                           
+    }
+    ,   
+    
 ]
