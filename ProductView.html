@@ -52,6 +52,7 @@
   .opac{
     opacity:0.7;
   }
+
     </style>
     <script src="./Script/ProductContent.js"></script>
 </head>
@@ -92,7 +93,13 @@
                       <li class="nav-item active fw-bold">
                         <a class="nav-link text-white icon-link icon-link-hover"  href="./Caterogy.html?id=Fruits"> Fruits and Vegetables</a>
                     </li>
-                       
+                    <li class="nav-item active fw-bold">
+                      <a class="nav-link text-white icon-link icon-link-hover"  href="./Cart.html"> Cart</a>
+                  </li>
+                  <li class="nav-item active fw-bold">
+                    <a class="nav-link text-white icon-link icon-link-hover"  href="./order.html"> Order Details</a>
+                </li>
+                   
                     </ul>
                 </div>     
     </div>
@@ -104,8 +111,8 @@
 
 <div class="container-fluid mt-5 pt-5">
 <div class="row mb-3">
-  <div class="col-12   text-center">
-    <div class="col h3 " id="name"></div>
+  <div class="col-12   ">
+    <div class="col h1 ms-md-5 ps-md-5 ms-2 ps-2 " id="name"></div>
   </div>
 </div>
     <div class="row ">
@@ -129,22 +136,27 @@
                         Covered in premium quality fair-trade cocoa from Nicaragua, Ecuador and Peru
                          Sweetened with coconut sugar</div>
                 </div>
+
+                <div class="row">
+                  <div class="col-12 mt-4">
+                    <div class="text h4">Quantity: <span id="quantity"></span></div>
+                  </div>
+                </div>
                 <div class="row">
                     <div class="col-12 col-md-6">
-                      <h3>Choose an option:</h2>
+                     
                       <div class="row">
                         <div class="col-7">
+                          
                           <div class="form-group">
-                            <select class="form-control" id="amount" onchange="updatePrice()">
-                              <option selected value="10">Full Box 10x40g</option>
-                              <option selected value="1">Single Piece 40g</option>
-                              </select>
-                              <div id="price" class="my-3 text-center fs-6 "></div>
-                              <div id="price1" class="my-3 text-center fs-6 "></div>
+                            
+                            <div class="my-3 h2 " >Price: ₹<span id="price" ></span></div>
+                             
+                            
                                <!-- <div class="row ">
                     <div id="price" class="col text-warning h2">$ 13.4</div>
                 </div> -->
-                            <span class="float-right"><a href="#" class="text-muted">Clear</a></span>
+                            <!-- <span class="float-right"><a href="#" class="text-muted">Clear</a></span> -->
                           </div>
                         </div>
                       </div>
@@ -154,8 +166,13 @@
                     <div class="row">
                     <div class="col">
                         <div class="row ">
-                            <div class="col-4">     
-                              <div class="form-group">
+                            <div class="col-6 col-md-5 col-lg-3"> 
+                              <div class="input-group mb-3">
+                                <button class="btn btn-outline-secondary" type="button" onclick="decreaseCount()">-</button>
+                                <input type="text" class="form-control text-center" id="product-count" value="1" readonly>
+                                <button class="btn btn-outline-secondary" type="button" onclick="increaseCount()">+</button>
+                            </div>    
+                              <!-- <div class="form-group">
                                 <div class="input-group mb-3 ">
                                   <div class="row">
                                     <div class="col "> <div class="input-group-prepend ">
@@ -179,10 +196,11 @@
                                   
                                 </div>
                                 
-                              </div></div>
+                              </div> -->
+                            </div>
                               <div class="col-6">
                                 <div class="row  mb-2">
-                                  <div class="col-12 "><button class="btn btn-danger fs-6 btn-sm" >ADD TO CART</button></div>
+                                  <div class="col-12 "><button class="btn btn-danger fs-6 btn-sm" onclick="placeOrder()" >ADD TO CART</button></div>
                                 </div>
                               </div>
                         </div>
@@ -203,7 +221,34 @@
 
 </section>
 
+<section>
 
+  <div class="container-fluid mt-5 pt-4 bg-warning opac">
+    <div class="row  ">
+               <div class="col text-center h4">We Are Certified Organic!</div>
+    </div>
+               <div class="row justify-content-center">
+                <div class="col-md-3 col-6 ">
+                  <img src="./Images/1.avif" class=" p-3 image-fluid w-75 h-75 ">
+                </div>
+                <div class="col-md-3 col-6">
+                  <img src="./Images/2.avif" class="p-3 mt-3 image-fluid w-75 h-50">
+                </div>
+               </div>
+    
+  </div>
+
+  <div class="conatiner pt-4">
+    <div class="row">
+      <div class="col text-center h3 text-uppercase">Let our customers speak for us</div>
+      <div class="row">
+        <div class="col">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 <section>

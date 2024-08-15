@@ -7,7 +7,7 @@ const ProductContent=[
         prd_price:99,
         prd_image:"./Images/Snacks/Organic Chakli_1.webp",
         prd_category:"snacks",
-        prd_weight:"100"
+        prd_weight:100
     }
     ,
     
@@ -18,7 +18,7 @@ const ProductContent=[
         prd_price:60,
         prd_image:"./Images/Snacks/NamakPara_1.webp",
         prd_category:"snacks",
-        prd_weight:"100"
+        prd_weight:100
     },
 
     {
@@ -64,7 +64,7 @@ const ProductContent=[
         prd_price:110,
         prd_image:"./Images/Snacks/PeanutChikki_1.webp",
          prd_category:"snacks",
-         prd_weight:150
+         prd_weight:500
     },
 
 
@@ -75,7 +75,7 @@ const ProductContent=[
         prd_price:130,
         prd_image:"./Images/Snacks/WhiteRice_1.webp",
         prd_category:"Rice",
-        prd_weight:[500,1,2 ],
+        prd_weight:1,
     }
     ,
     {
@@ -85,7 +85,7 @@ const ProductContent=[
         prd_price:260,
         prd_image:"./Images/Snacks/BrownRice_1.webp",
         prd_category:"Rice",
-        prd_weight:[500,1],
+        prd_weight:1,
     }
     ,
     {
@@ -95,7 +95,7 @@ const ProductContent=[
         prd_price:95,
         prd_image:"./Images/Snacks/Red_Rice_1.webp",
         prd_category:"Rice",
-        prd_weight:[500,1],
+        prd_weight:1,
     }
     ,
     {
@@ -105,7 +105,7 @@ const ProductContent=[
         prd_price:155,
         prd_image:"./Images/Snacks/Millet_1.webp",
         prd_category:"Millet",
-        prd_weight:[500,1]
+        prd_weight:1
     }
     ,
     {
@@ -115,7 +115,7 @@ const ProductContent=[
         prd_price:255,
         prd_image:"./Images/Snacks/ChanaDal_1.webp",
         prd_category:"Dal",
-        prd_weight:[500,1]
+        prd_weight:1
     }
     ,
     {
@@ -125,7 +125,7 @@ const ProductContent=[
         prd_price:205,
         prd_image:"./Images/Snacks/BarleyFlour_1.webp",
         prd_category:"Flour",
-        prd_weight:[500,1]
+        prd_weight:1,
     }
     ,
     {
@@ -135,7 +135,7 @@ const ProductContent=[
         prd_price:135,
         prd_image:"./Images/Snacks/CornFlour.webp",
         prd_category:"Flour",
-        prd_weight:[500,1000]
+        prd_weight:1
     }
     ,
     {
@@ -145,7 +145,7 @@ const ProductContent=[
         prd_price:140,
         prd_image:"./Images/Snacks/KidneyBeans_1.webp",
         prd_category:"Peas",
-        prd_weight:[500,1000]
+        prd_weight:1,
     }
     ,
     {
@@ -155,7 +155,7 @@ const ProductContent=[
         prd_price:140,
         prd_image:"./Images/Snacks/KidneyBeans_1.webp",
         prd_category:"Peas",
-        prd_weight:[500,1000]
+        prd_weight:1
     }
     ,
     {
@@ -165,7 +165,7 @@ const ProductContent=[
         prd_price:85,
         prd_image:"./Images/Snacks/PeanutChikki_1.webp",
         prd_category:"Peanuts",
-        prd_weight:[100,200],                                                           
+        prd_weight:500,                                                           
     }
     ,
     {
@@ -175,7 +175,7 @@ const ProductContent=[
         prd_price:85,
         prd_image:"./Images/F&V/plum.webp",
         prd_category:"Fruits",
-        prd_weight:[250,500],                                                           
+        prd_weight:500,                                                           
     }
     ,
     {
@@ -185,7 +185,7 @@ const ProductContent=[
         prd_price:204,
         prd_image:"./Images/F&V/mango.webp",
         prd_category:"Fruits",
-        prd_weight:[500,1],                                                           
+        prd_weight:1,                                                           
     }
     ,
     {
@@ -195,7 +195,7 @@ const ProductContent=[
         prd_price:60,
         prd_image:"./Images/F&V/onion.webp",
         prd_category:"Vegetables",
-        prd_weight:[500,1],                                                           
+        prd_weight:1,                                                           
     }
     ,
     {
@@ -205,7 +205,7 @@ const ProductContent=[
         prd_price:51,
         prd_image:"./Images/F&V/tomato.webp",
         prd_category:"Vegetables",
-        prd_weight:[500,1],                                                           
+        prd_weight:1,                                                           
     }
     ,
     {
@@ -215,7 +215,7 @@ const ProductContent=[
         prd_price:70,
         prd_image:"./Images/F&V/capsicum.webp",
         prd_category:"Vegetables",
-        prd_weight:[500],                                                           
+        prd_weight:1,                                                           
     }
     ,
     {
@@ -225,7 +225,7 @@ const ProductContent=[
         prd_price:70,
         prd_image:"./Images/F&V/beans.webp",
         prd_category:"Vegetables",
-        prd_weight:[500,1],                                                           
+        prd_weight:1,                                                           
     }
     ,
     {
@@ -235,11 +235,12 @@ const ProductContent=[
         prd_price:170,
         prd_image:"./Images/F&V/cucumber.webp",
         prd_category:"Vegetables",
-        prd_weight:[500,1],                                                           
+        prd_weight:1,                                                           
     }
-    ,
+    ,   
     
 ]
+
 
 
 function displayFood() {
