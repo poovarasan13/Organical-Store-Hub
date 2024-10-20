@@ -10,55 +10,59 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
- 
     <style>
-     @media  (min-width:768px){
-      .landing{
-        height:400px;
-        
+      @media  (min-width:768px){
+       .landing{
+         height:400px;
+         
+      }
+     
      }
-    
-    }
-    @media(min-width:321px)
-    {
-     .card-design{
-       width: 147px;
+     @media(min-width:311px)
+     {
+      .card-design{
+        width: 147px;
+        height:280px;
+      }
      }
-    }
-    @media(min-width:375px)
-    {
-     .card-design{
-       width: 160px;
+     @media(min-width:375px)
+     {
+      .card-design{
+        width: 160px;
+        height:300px;
+      }
      }
-    }
-    @media(min-width:375px)
-    {
-     .card-design{
-       width: 170px;
+     @media(min-width:375px)
+     {
+      .card-design{
+        width: 170px;
+        height:300px;
+      }
      }
-    }
-    @media(min-width:425px)
-    {
-     .card-design{
-       width: 190px;
+     @media(min-width:425px)
+     {
+      .card-design{
+        width: 190px;
+        height:300px;
+      }
      }
-    }
-    @media(min-width:768px)
-    {
-     .card-design{
-       width:220px;
+     @media(min-width:768px)
+     {
+      .card-design{
+        width:220px;
+        height:340px;
+      }
      }
-    }
-  .opac{
-    opacity:0.7;
-  }
-
-    </style>
-    <script src="./Script/ProductContent.js"></script>
+   .opac{
+     opacity:0.7;
+   }
+ 
+ 
+     </style>
 </head>
 <body>
   
-  <nav class="navbar navbar-expand-lg bg-success  fixed-top">
+   <nav class="navbar navbar-expand-md bg-success  fixed-top">
     <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -72,14 +76,13 @@
           
             
         </a>
-           <!-- sidebar -->
+         
            
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-md-4 ">
                         <li class="nav-item active fw-bold">
-                          <a class="nav-link  text-white  icon-link icon-link-hover " href="./indexx.html" >Home</a>
-                            <!-- <a class="nav-link text-white icon-link icon-link-hover" onclick="ViewProduct('Foods')">Home</a> -->
-                        </li>
+                          <a class="nav-link  text-white  icon-link icon-link-hover " href="./index.html" >Home</a>
+                                   </li>
                         <li class="nav-item active fw-bold">
                             <a class="nav-link text-white icon-link icon-link-hover"  href="./Caterogy.html?id=snacks" >Snacks</a>
                         </li>
@@ -105,111 +108,134 @@
                 </div>     
     </div>
    </nav>
-
-<!-- productdetails -->
-
-<section>
-
-<div class="container-fluid mt-5 pt-5">
-<div class="row mb-3">
-  <div class="col-12   ">
-    <div class="col h1 ms-md-5 ps-md-5 ms-2 ps-2 " id="name"></div>
-  </div>
-</div>
-    <div class="row ">
-        <div class="col-md-5 my-auto ">
-            <img id="image" class="img-fluid rounded" >
+   <section class="" id="landingPageContent" >
+    <div id="carouselExampleFade" class="carousel slide carousel-fade pt-3" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active pt-5">
+          <img src="./Images/cover/cover1.jpg"  class="d-block w-100 landing" alt="...">
         </div>
-        <div class="col-md-7">
-            <div class="conatiner-fluid  mt-3">
-                <div class="row ">
-                   
-                       </div>
-               
-                <div class="row">
-                    <div class="col h3 " >Description:</div>
-                </div>
-                <div class="row">
-                    <div class="col  pt-2" id="description"> Slightly roasted salted almonds
-                        Covered in premium quality fair-trade cocoa from Nicaragua, Ecuador and Peru
-                         Sweetened with coconut sugar</div>
-                </div>
-
-                <div class="row">
-                  <div class="col-12 mt-4">
-                    <div class="text h4">Quantity: <span id="quantity"></span></div>
-                  </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-6">
-                     
-                      <div class="row">
-                        <div class="col-7">
-                          
-                          <div class="form-group">
-                            
-                            <div class="my-3 h2 " >Price: ₹<span id="price" ></span></div>
-                             
-                            
-                               
-                          </div>
-                        </div>
-                      </div>
-                   </div>
-
-
-                    <div class="row">
-                    <div class="col">
-                        <div class="row ">
-                            <div class="col-6 col-md-5 col-lg-3"> 
-                              <div class="input-group mb-3">
-                                <button class="btn btn-outline-secondary" type="button" onclick="decreaseCount()">-</button>
-                                <input type="text" class="form-control text-center" id="product-count" value="1" readonly>
-                                <button class="btn btn-outline-secondary" type="button" onclick="increaseCount()">+</button>
-                            </div>    
-                             
-                            </div>
-                              <div class="col-6">
-                                <div class="row  mb-2">
-                                  <div class="col-12 "><button class="btn btn-danger fs-6 btn-sm" onclick="placeOrder()" >ADD TO CART</button></div>
-                                </div>
-                              </div>
-                        </div>
-                        
-                          
-                             
-                           
-                        </div>
-                 
-                    </div>
-                    
-                    </div>
-                </div>
-                  </div>
-            </div>
+        <div class="carousel-item pt-5">
+          <img src="./Images/cover/cover3.jpg" class="d-block w-100 landing " alt="...">
         </div>
-   
-
-</section>
-
-<section>
-
-  <div class="container-fluid mt-5 pt-4 bg-warning opac">
-    <div class="row  ">
-               <div class="col text-center h4">We Are Certified Organic!</div>
+        <div class="carousel-item pt-5">
+          <img src="./Images/cover/cover2.jpg" class="d-block w-100 landing" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-               <div class="row justify-content-center">
-                <div class="col-md-3 col-6 ">
-                  <img src="./Images/1.avif" class=" p-3 image-fluid w-75 h-75 ">
-                </div>
-                <div class="col-md-3 col-6">
-                  <img src="./Images/2.avif" class="p-3 mt-3 image-fluid w-75 h-50">
-                </div>
-               </div>
-    
-  </div>
-
 </section>
+
+
+
+
+
+
+
+
+<section>
+  <div class="container my-5">
+    <div class="row text-align-justify">
+      <div class="col">
+        <div class="title fs-5 fw-bolder mb-3 text-center ">ᴍɪɴᴅꜰᴜʟ ꜱʜᴏᴘᴘɪɴɢ ᴍᴀᴅᴇ ꜱɪᴍᴘʟᴇ</div>
+            <div class="text-align-justify">Discover the essence of pure, sustainable living at <span class="fw-bold">Organic Hub</span> . Your trusted marketplace for authentic organic products, where every choice you make nurtures both you and the planet. Embrace the beauty of nature in every purchase and join us in cultivating a healthier, greener future</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section>
+  <div class="container-fluid">
+      <div class="row">
+          <div class="text-danger text-center fw-bold">Foods</div>
+      </div>
+      <div id="food-list" class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+          
+      </div>
+      <div class="row mb-3 justify-content-center">
+        <div class="col-2 text-center">
+          <a href="#" class="icon-link icon-link-hover text-decoration-none link-dark" onclick="ViewProduct('Foods')">More<i class="bi bi-arrow-right"></i>
+
+
+</a>
+        </div>
+          
+      </div>
+  </div>
+</section>
+<script>
+  function ViewProduct(value){
+  window.open('./Caterogy.html'+ "?id=" +value, "_self");
+}
+</script>
+<section>
+  <div class="container-fluid">
+      <div class="row">
+          <div class="text-success text-center fw-bold">Snacks</div>
+      </div>
+      <div id="snacks-list" class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+          
+      </div>
+
+
+      <div class="row mb-3 justify-content-center">
+        <div class="col-2 text-center">
+          <a href="#" class="icon-link icon-link-hover text-decoration-none link-dark" onclick="ViewProduct('snacks')">More<i class="bi bi-arrow-right"></i>
+
+  
+</a>
+        </div>
+      </div>
+  </div>
+</section>
+
+<section>
+  <div class="container-fluid">
+      <div class="row">
+          <div class="text-success text-center fw-bold">DryFruits and Seeds</div>
+      </div>
+      <div id="seed-list" class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+          
+      </div>
+      <div class="row mb-3 justify-content-center">
+        <div class="col-2 text-center">
+          <a href="#" class="icon-link icon-link-hover text-decoration-none link-dark" onclick="ViewProduct('Seeds')">More<i class="bi bi-arrow-right"></i>
+
+</a>
+        </div>
+      </div>  </div>
+</section>
+
+<section>
+  <div class="container-fluid">
+      <div class="row">
+          <div class="text-success text-center fw-bold">Fruits and Vegetables</div>
+      </div>
+      <div id="fv-list" class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+          
+      </div>
+     <div class="row mb-3 justify-content-center">
+        <div class="col-2 text-center">
+          <a href="#" class="icon-link icon-link-hover text-decoration-none link-dark" onclick="ViewProduct('Fruits')">More<i class="bi bi-arrow-right"></i>
+
+        
+
+</a>
+        </div>
+      </div> </div>
+</section>
+
+
 
 
 <section>
@@ -220,8 +246,8 @@
                
                 
                   
-                  <p>Organic Hub is a leading producer and distributor of organic products.We focus on innov
-                    ative organic food products with additional health benefits. </p>
+                  <p><a class="text-decoration-none  text-dark" href="#landingPageContent">Organic Hub is a leading producer and distributor of organic products.We focus on innov
+                    ative organic food products with additional health benefits. </a></p>
               </div> 
               <div class="col-md-7 ">
                 <div class="row"><div class="col-md-4 "> 
@@ -285,18 +311,18 @@
           <hr> 
           <div class="row"> 
               <div class="col-md-4 text-center"> 
-                  <p class="">Organic Hub @ 2024</p> 
+                  <a class="text-decoration-none  text-dark" href="#landingPageContent">Organic Hub @ 2024</a> 
               </div> 
               <div class="col-md-6 text-end"> 
                   <ul class="list-inline footer-links"> 
                       <li class="list-inline-item"> 
-                          <a href="#" class="text-white"> 
-                              Privacy Policy 
+                          <a href="" class="text-white text-decoration-none"> 
+                              Privacy Policy. 
                           </a> 
                       </li> 
                       <li class="list-inline-item"> 
-                          <a href="#" class="text-white"> 
-                              Terms of Service 
+                          <a href="" class="text-white text-decoration-none"> 
+                              Terms of Service. 
                           </a> 
                       </li> 
                      
@@ -307,31 +333,7 @@
   </footer> 
 </section>
 
-  <script src="./Script/ProductView.js"></script>
-  <!-- <script>
-    function updatePrice() {
-        var size = document.getElementById('amount').value;
-        var price = document.getElementById('price').value;
-        console..clearSelection
-        if (size == 1) {
-            price = price;
-        } else if (size == 10) {
-            price = price * 10;
-        }
-        
-        document.getElementById('price1').innerHTML = "Price: $" + price;
-        console.log(price);
-    }
 
-    function clearSelection() {
-        document.getElementById('amount').value = 1;
-        updatePrice();
-    }
-
-    
-    updatePrice();
-
- </script> -->
+<script src="./Script/index.js"></script>
 </body>
 </html>
-
